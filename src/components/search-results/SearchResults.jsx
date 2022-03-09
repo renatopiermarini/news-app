@@ -15,7 +15,7 @@ export const SearchResults = ({ keyword }) => {
       <div className="article-div animate__fadeIn">
         {articles?.map((article) => (
           <Article
-            key={article.id}
+            key={Math.random()}
             author={article.author}
             title={article.title}
             summary={article.summary}
