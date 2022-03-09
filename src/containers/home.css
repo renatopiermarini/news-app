@@ -1,0 +1,85 @@
+.home {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background-color: #0e121b;
+}
+
+.header-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/news-background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.text-explanation {
+  color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+
+.text-explanation h3 {
+  width: 85%;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.input-div {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input-div form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input-div input {
+  padding: 0.8rem;
+  border-radius: 50px;
+  width: 60%;
+  border: none;
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.input-div button {
+  cursor: pointer;
+  width: 30%;
+  border-radius: 50px;
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.input-div button:active {
+  background-color: white;
+  color: #0e121b;
+}
+
+@media screen and (min-width: 768px) {
+  .input-div {
+    width: 500px;
+  }
+
+  .input-div button:hover {
+    background-color: white;
+    color: #0e121b;
+  }
+}
