@@ -2,7 +2,6 @@ import { useFetch } from "../../hooks/useFetch";
 import { Article } from "../article-container/Article";
 import { Loading } from "../loading/Loading";
 import "./results.css";
-import "animate.css";
 
 export const SearchResults = ({ keyword }) => {
   const { data: articles, loading } = useFetch(keyword);

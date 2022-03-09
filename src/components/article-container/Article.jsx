@@ -1,6 +1,6 @@
 import React from "react";
 import "./article.css";
-import "animate.css";
+
 
 export const Article = ({
   author,
@@ -11,7 +11,7 @@ export const Article = ({
   date,
 }) => {
   return (
-    <div className="article animate__fadeIn">
+    <div className="article">
       {author && <p>{author}</p>}
       <h2>{title}</h2>
       <img src={urlToImage} className="imagen" />
