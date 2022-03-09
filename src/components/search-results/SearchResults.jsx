@@ -15,15 +15,13 @@ export const SearchResults = ({ keyword }) => {
       <div className="article-div animate__fadeIn">
         {articles?.map((article) => (
           <Article
-            key={Math.random()}
-            source={article.source.name}
+            key={article.id}
             author={article.author}
             title={article.title}
-            description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage}
-            date={article.publishedAt}
-            content={article.content}
+            summary={article.summary}
+            link={article.link}
+            media={article.media}
+            rights={article.rights}
           />
         ))}
       </div>

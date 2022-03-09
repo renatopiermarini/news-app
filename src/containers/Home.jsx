@@ -4,7 +4,7 @@ import { Header } from "../header/Header";
 import "./home.css";
 
 export const Home = () => {
-  const [palabra, setPalabra] = useState(["News"]);
+  const [palabra, setPalabra] = useState(["bitcoin"]);
 
   return (
     <main className="home animate__fadeIn">
