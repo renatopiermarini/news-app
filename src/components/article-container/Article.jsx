@@ -8,7 +8,7 @@ export const Article = ({ rights, author, title, summary, link, media }) => {
       <h2>{title}</h2>
       {media && <img src={media} className="imagen" />}
       <p>{summary}</p>
-      <p>{rights}</p>
+      {rights && <p>{"Rights: " + rights}</p>}
       <div className="button-div">
         <a href={link} target="_blank">
           Read article
