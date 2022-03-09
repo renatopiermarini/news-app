@@ -6,7 +6,9 @@ export const Article = ({ rights, author, title, summary, link, media }) => {
     <div className="article">
       {author && <p>{author}</p>}
       <h2>{title}</h2>
-      {media && <img src={media} className="imagen" />}
+      <div className="media-div">
+        {media && <img src={media} className="imagen" />}
+      </div>
       <p className="description">{summary}</p>
       {rights && <p>{"Rights: " + rights}</p>}
       <div className="button-div">
